@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  min-width: 450px;
+  overflow: overlay;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "Actay";
+  src: url("actaywide-bold.otf") format("opentype");
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+@font-face {
+  font-family: "ActayR";
+  src: url("actay-regular.otf") format("opentype");
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  background: #e3ecf5;
+  --text-primary: #b6b6b6;
+  --text-secondary: black;
+  --bg-primary: #17171f;
+  --bg-secondary: #141418;
+  font-family: "Actay";
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+@media screen and (max-width: 960px) {
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f122;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #aaaaaa;
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.wrapper .button {
+  z-index: 99999;
+  pointer-events: fill;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 65px 0 0 0;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  font-stretch: 110%;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-out;
+}
+.wrapper .button .icon i {
+  color: #000;
+}
+
+.wrapper .button:nth-child(1) {
+  width: 195px;
+}
+.wrapper .button:nth-child(1) span {
+  color: black;
+}
+.wrapper .button:nth-child(1):hover span {
+  color: #2aabee;
+  font-stretch: 125%;
+}
+@media screen and (min-width: 960px) {
+  .wrapper .button:nth-child(1) {
+    width: 195px;
+    box-shadow: 0px 0px 0px 3px rgba(249, 104, 84, 0);
+  }
+  .wrapper .button:nth-child(1):hover {
+    width: 350px;
+    box-shadow: 0px 0px 0px 3px #2aabee;
+  }
+}
+
+.wrapper .button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon {
+  transform: scale(0.8);
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+  background: #2aabee;
+}
+
+.wrapper .button .icon i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i {
+  color: #fff;
+}
+.wrapper .button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  margin-left: 70px;
+  transition: all 0.3s ease-out;
+}
+.wrapper3 .button span {
+  margin-left: 0px;
+}
+.wrapper3 .button:nth-child(1) {
+  width: 350px;
+  margin: 0px;
+}
+.wrapper3 .button {
+  display: flex;
+  justify-content: center;
+}
+.wrapper3 .button:nth-child(1):hover {
+  box-shadow: 0px 0px 0px 3px #097952;
+}
