@@ -29,7 +29,7 @@ const Oauth = () => {
   const queryParams = new URLSearchParams(location.search);
   let codeParam = queryParams.get("code");
   if (codeParam) {
-    codeParam = codeParam.slice(9); // Crop first 9 characters
+    codeParam = codeParam.slice(9);
     window.open("tg://resolve?domain=" + bot_link + "&start=" + codeParam);
   }
 
