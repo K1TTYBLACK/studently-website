@@ -28,8 +28,8 @@ const Oauth = () => {
   const bot_link = "StudentlyUA_bot";
   const queryParams = new URLSearchParams(location.search);
   let codeParam = queryParams.get("code");
-  console.log("Authorization code:", codeParam);
-  console.log("Query params:", queryParams.toString());
+  //console.log("Authorization code:", codeParam);
+  //console.log("Query params:", queryParams.toString());
   if (codeParam) {
     codeParam = codeParam.slice(9); // Crop first 9 characters
     window.open("tg://resolve?domain=" + bot_link + "&start=" + codeParam);
